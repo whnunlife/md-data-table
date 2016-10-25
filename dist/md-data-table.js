@@ -722,7 +722,7 @@ function mdHead($compile) {
     var oldValue = new Array(2);
     
     function addCheckboxColumn() {
-      element.children().prepend('<th class="md-column md-checkbox-column">');
+      element.children().prepend('<th class="md-column md-checkbox-column custom">');
     }
     
     function attatchCheckbox() {
@@ -832,6 +832,7 @@ function mdHead($compile) {
 }
 
 mdHead.$inject = ['$compile'];
+
 
 angular.module('md.data.table').directive('mdRow', mdRow);
 
